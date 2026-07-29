@@ -90,23 +90,33 @@ Full walkthrough: [TUTORIAL.md](TUTORIAL.md).
 
 ## Install
 
-There are no prebuilt binaries in this repo yet — build from source with
-Cargo:
+Three ways to get `lab` running, in order of speed:
 
 ```bash
+# 1. Prebuilt binary, already in this repo at dist/ (fastest, no Rust needed)
+chmod +x dist/lab-linux-x86_64
+sudo cp dist/lab-linux-x86_64 /usr/local/bin/lab
+
+# 2. Install from source via Cargo
 git clone https://github.com/MrEchoFi/docklab.git
 cd docklab
-
 cargo install --path .     # installs `lab` to ~/.cargo/bin
-# or
+
+# 3. Build it yourself
 cargo build --release      # binary lands at target/release/lab
 ```
+
+`dist/` ships binaries for Linux, Windows, and macOS (Intel + Apple
+Silicon), plus a `SHA256SUMS` file to verify against — see
+[INSTALLATION.md](INSTALLATION.md#verifying-a-download) for the checksum
+command per OS.
 
 You need Docker installed and reachable via the `docker` CLI (`docker ps`
 should work without `sudo`) — `lab` shells out to `docker`, it does not
 talk to the Docker daemon directly.
 
-Full platform-by-platform instructions and troubleshooting:
+Full platform-by-platform instructions, including how each `dist/`
+binary was built and how well-verified it is on its target OS:
 **[INSTALLATION.md](INSTALLATION.md)**.
 
 ## Command overview
