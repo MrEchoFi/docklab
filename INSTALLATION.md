@@ -24,6 +24,16 @@ OS below.
 
 ---
 
+## First clone the REPO
+
+```bash
+
+git clone https://github.com/MrEchoFi/docklab.git
+cd docklab
+
+```
+
+
 ## Linux
 
 ### 1. Install Docker
