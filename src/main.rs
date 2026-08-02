@@ -191,7 +191,14 @@ fn print_version() {
 
 fn print_help() {
     println!(
-        r#"DockLAB {version} — DockLAB
+        r#"________                 __   .____       _____ __________ 
+\______ \   ____   ____ |  | _|    |     /  _  \\______   \
+ |    |  \ /  _ \_/ ___\|  |/ /    |    /  /_\  \|    |  _/
+ |    `   (  <_> )  \___|    <|    |___/    |    \    |   \
+/_______  /\____/ \___  >__|_ \_______ \____|__  /______  /
+        \/            \/     \/       \/       \/       \/  By MrEchoFi
+        
+        DockLAB {version} — DockLAB
 
 BIO:
  DockLAB ~ Disposable, isolated terminals for practicing IT stuffs, CVE PoCs and pentesting — safely.
@@ -226,7 +233,13 @@ EXAMPLES:
 
 fn print_guide() {
     println!(
-        r#"==================================
+        r#"________                 __   .____       _____ __________ 
+\______ \   ____   ____ |  | _|    |     /  _  \\______   \
+ |    |  \ /  _ \_/ ___\|  |/ /    |    /  /_\  \|    |  _/
+ |    `   (  <_> )  \___|    <|    |___/    |    \    |   \
+/_______  /\____/ \___  >__|_ \_______ \____|__  /______  /
+        \/            \/     \/       \/       \/       \/  By MrEchoFi
+==================================
  DockLAB — QUICK START GUIDE
 ==================================
 
